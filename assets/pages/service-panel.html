@@ -51,10 +51,6 @@
               <i class="fas fa-building"></i>
               Permits and Licenses
             </button>
-            <button class="service-btn" data-service="tax">
-              <i class="fas fa-money-bill-wave"></i>
-              Tax and Bill Payments
-            </button>
             <button class="service-btn" data-service="scholarship">
               <i class="fas fa-graduation-cap"></i>
               Scholarship Applications
@@ -289,40 +285,6 @@
                 <button type="submit" class="submit-btn">
                   Apply for Permit/License
                 </button>
-              </form>
-            </div>
-            <div id="tax" class="service-info">
-              <h2>Tax and Bill Payments</h2>
-              <form
-                id="taxForm"
-                class="service-form"
-                action="../includes/services-managment.php"
-                method="POST"
-                enctype="multipart/form-data"
-              >
-                <input type="hidden" name="serviceType" value="tax" />
-                <label for="taxName">Full Name:</label>
-                <input type="text" id="taxName" name="taxName" required />
-                <label for="taxEmail">Email:</label>
-                <input type="email" id="taxEmail" name="taxEmail" required />
-                <label for="taxType">Payment Type:</label>
-                <select id="taxType" name="taxType" required>
-                  <option value="">Select payment type</option>
-                  <option value="Property Tax">Property Tax</option>
-                  <option value="Water Bill">Water Bill</option>
-                  <option value="Electricity Bill">Electricity Bill</option>
-                  <option value="Other">Other</option>
-                </select>
-                <label for="taxAmount">Amount:</label>
-                <input
-                  type="number"
-                  id="taxAmount"
-                  name="taxAmount"
-                  min="0"
-                  step="0.01"
-                  required
-                />
-                <button type="submit" class="submit-btn">Make Payment</button>
               </form>
             </div>
             <div id="scholarship" class="service-info">
