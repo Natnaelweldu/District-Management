@@ -70,17 +70,16 @@
                 <label for="citizenName">Full Name:</label>
                 <input
                   type="text"
-                  id="citizenName"
-                  name="citizenName"
+                  id="citizenCitizenId"
+                  name="citizenId"
                   required
                 />
-                <label for="citizenEmail">Email:</label>
-                <input
-                  type="email"
-                  id="citizenEmail"
-                  name="citizenEmail"
-                  required
-                />
+                <label for="certificateEmail">Upload ID:</label>
+               <input 
+                  type="file"
+                  id="citizenId"
+                  name="citizenId"
+                  value="<?php echo $_SESSION['email']; ?>">
                 <label for="citizenService">Select Service:</label>
                 <select id="citizenService" name="citizenService" required>
                   <option value="">Choose a service</option>
@@ -116,17 +115,16 @@
                 <label for="complaintName">Full Name:</label>
                 <input
                   type="text"
-                  id="complaintName"
-                  name="complaintName"
+                  id="complaintCitizenId"
+                  name="citizenId"
                   required
                 />
-                <label for="complaintEmail">Email:</label>
-                <input
-                  type="email"
-                  id="complaintEmail"
-                  name="complaintEmail"
-                  required
-                />
+                <label for="certificateEmail">Upload ID:</label>
+                <input 
+                  type="file"
+                  id="citizenId"
+                  name="citizenId"
+                  value="<?php echo $_SESSION['email']; ?>"
                 <label for="complaintType">Complaint Type:</label>
                 <select id="complaintType" name="complaintType" required>
                   <option value="">Select complaint type</option>
@@ -160,17 +158,16 @@
                 <label for="documentName">Full Name:</label>
                 <input
                   type="text"
-                  id="documentName"
-                  name="documentName"
+                  id="documentCitizenName"
+                  name="citizenId"
                   required
                 />
-                <label for="documentEmail">Email:</label>
-                <input
-                  type="email"
-                  id="documentEmail"
-                  name="documentEmail"
-                  required
-                />
+                <label for="scholarshipEmail">Upload ID:</label>
+                <input 
+                  type="file"
+                  id="citizenId"
+                  name="citizenId"
+                  value="<?php echo $_SESSION['email']; ?>"
                 <label for="documentType">Document Type:</label>
                 <select id="documentType" name="documentType" required>
                   <option value="">Select document type</option>
@@ -204,17 +201,19 @@
                 <label for="certificateName">Full Name:</label>
                 <input
                   type="text"
-                  id="certificateName"
-                  name="certificateName"
+                  id="certificateCitzienId"
+                  name="certificateId"
                   required
                 />
-                <label for="certificateEmail">Email:</label>
-                <input
-                  type="email"
-                  id="certificateEmail"
-                  name="certificateEmail"
-                  required
-                />
+                <label for="certificateId">Upload ID:</label>
+                <input 
+                  type="file"
+                  id="certificateId"
+                  name="certificateId"
+                  value="<?php echo $_SESSION['email']; ?>"
+                >
+                  
+
                 <label for="certificateType">Certificate Type:</label>
                 <select id="certificateType" name="certificateType" required>
                   <option value="">Select certificate type</option>
@@ -252,17 +251,18 @@
                 <label for="permitsName">Full Name:</label>
                 <input
                   type="text"
-                  id="permitsName"
-                  name="permitsName"
+                  id="permitsCitizenId"
+                  name="citizenId"
                   required
                 />
-                <label for="permitsEmail">Email:</label>
-                <input
-                  type="email"
-                  id="permitsEmail"
-                  name="permitsEmail"
-                  required
-                />
+                <label for="permitsAndLicensesId">Upload ID:</label>
+                  <input 
+                  type="file"
+                  id="permitsAndLicensesId"
+                  name="permitsAndLicensesId"
+                  value="<?php echo $_SESSION['email']; ?>"
+                >
+                  
                 <label for="permitsType">Permit/License Type:</label>
                 <select id="permitsType" name="permitsType" required>
                   <option value="">Select permit/license type</option>
@@ -296,21 +296,24 @@
                 method="POST"
                 enctype="multipart/form-data"
               >
+              
                 <input type="hidden" name="serviceType" value="scholarship" />
                 <label for="scholarshipName">Full Name:</label>
                 <input
                   type="text"
-                  id="scholarshipName"
+                  id="scholarshipCitizenId"
                   name="scholarshipName"
                   required
                 />
-                <label for="scholarshipEmail">Email:</label>
-                <input
-                  type="email"
-                  id="scholarshipEmail"
-                  name="scholarshipEmail"
-                  required
-                />
+                <label for="scholarshipId">Upload ID:</label>
+                 <input 
+                  type="file"
+                  id="scholarshipId"
+                  name="scholarshipId"
+                  value="<?php echo $_SESSION['email']; ?>"
+                >
+                 
+
                 <label for="scholarshipLevel">Education Level:</label>
                 <select id="scholarshipLevel" name="scholarshipLevel" required>
                   <option value="">Select education level</option>
